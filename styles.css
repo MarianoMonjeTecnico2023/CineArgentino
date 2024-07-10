@@ -1,0 +1,113 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el borde y el padding en el ancho y alto del elemento */
+  }
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    color: #222;
+  }
+  
+  /* Estilos para el carrusel (puedes personalizar esto según tu implementación) */
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+  
+  
+#estrenos-destacados .carousel .movie img {
+    max-width: 80% !important; /* Forzar la aplicación del ancho máximo */
+    height: auto !important;    /* Forzar la aplicación de la altura automática */
+    display: block !important;  /* Forzar que la imagen sea de tipo bloque */
+    margin: 0 auto !important;  /* Forzar el centrado horizontal */
+  }
+
+  /* Estilos para la grilla de películas */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+    gap: 1rem;
+  }
+  
+  .movie {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #estrenos-destacados .carousel .movie img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .movie h3 {
+    margin: 0.5rem 0;
+  }
+  #lista-estrenos .movie img { /* Estilos para todas las imágenes */
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .movie p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .movie a {
+    display: inline-block;
+    background-color: #007bff; /* Color de botón */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
