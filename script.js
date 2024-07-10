@@ -1,5 +1,5 @@
 const apiKey = '287fb2be67baf068b14d542efafba2c1';
-const apiUrl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=es-AR&region=AR&append_to_response=videos`;
+const apiUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=es-AR&region=AR&append_to_response=videos`;
 const destacadosContainer = document.querySelector('#estrenos-destacados .carousel');
 const gridContainer = document.querySelector('.grid');
 
